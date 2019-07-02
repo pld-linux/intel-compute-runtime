@@ -36,6 +36,7 @@ stacks supporting the GEN graphics hardware architecture.
 install -d build
 cd build
 %cmake \
+	-DSKIP_ALL_ULT=ON \
 		../
 %{__make}
 
