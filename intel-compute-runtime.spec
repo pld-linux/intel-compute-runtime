@@ -14,13 +14,14 @@ Source0:	https://github.com/intel/compute-runtime/archive/%{version}/%{name}-%{v
 # Source0-md5:	c827cb2987d11e65a0f25befee0bbcb1
 URL:		https://01.org/compute-runtime
 BuildRequires:	cmake >= 3.2.0
-BuildRequires:	intel-gmmlib >= %{gmmlib_version}
-BuildRequires:	intel-graphics-compiler >= %{igc_version}
+BuildRequires:	intel-gmmlib-devel >= %{gmmlib_version}
+BuildRequires:	intel-graphics-compiler-devel >= %{igc_version}
 BuildRequires:	libdrm-devel
 BuildRequires:	libva-devel
 BuildRequires:	pkgconfig
 Provides:	ocl-icd(intel)
 Provides:	ocl-icd-driver
+ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
