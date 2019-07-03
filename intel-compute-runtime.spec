@@ -7,7 +7,7 @@
 Summary:	Intel Graphics Compute Runtime for OpenCL
 Name:		intel-compute-runtime
 Version:	19.24.13171
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	https://github.com/intel/compute-runtime/archive/%{version}/%{name}-%{version}.tar.gz
@@ -21,7 +21,7 @@ BuildRequires:	libva-devel
 BuildRequires:	pkgconfig
 Provides:	ocl-icd(intel)
 Provides:	ocl-icd-driver
-ExclusiveArch:	%{ix86} %{x8664}
+ExclusiveArch:	%{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
