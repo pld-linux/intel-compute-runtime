@@ -7,7 +7,7 @@
 Summary:	Intel Graphics Compute Runtime for OpenCL
 Name:		intel-compute-runtime
 Version:	19.24.13171
-Release:	3
+Release:	4
 License:	LGPL v2+
 Group:		Libraries
 Source0:	https://github.com/intel/compute-runtime/archive/%{version}/%{name}-%{version}.tar.gz
